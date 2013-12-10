@@ -1,0 +1,6 @@
+include LICENSE.txt
+include README.md
+recursive-include servee_redactor *
+recursive-include servee_redactor/static *
+recursive-include servee_redactor/templates *
+recursive-include docs *
