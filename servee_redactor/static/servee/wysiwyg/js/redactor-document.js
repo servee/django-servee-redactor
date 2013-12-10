@@ -18,7 +18,7 @@ RedactorPlugins.document = {
 			var html = '';
 			if (link !== true)
 			{
-				html = '<a data-debug="from-docInsert" id="doc-marker" href="' + json.filelink + '">' + json.title + '</a>';
+				html = '<a id="doc-marker" href="' + json.filelink + '">' + json.title + '</a>';
 				if (this.opts.paragraphy) html = '<p>' + html + '</p>';
 			}
 			else
@@ -52,7 +52,7 @@ RedactorPlugins.document = {
 
 		if (val !== '')
 		{
-			var data = '<a data-debug="from-docCallbackLink" id="doc-marker" href="' + val + '">' + val + '</a>';
+			var data = '<a id="doc-marker" href="' + val + '">' + val + '</a>';
 			if (this.opts.linebreaks === false) data = '<p>' + data + '</p>';
 
 			this.docInsert(data, true);
