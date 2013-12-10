@@ -19,12 +19,3 @@ function load_wysiwyg($par){
             plugins: ['document']
         });
 }
-
-// This isn't really redactor code, but it works here for the moment.
-// TODO: Move to a more appropriate place. It makes a thumbail image
-// out of the link in the file upload boxes.
-
-if ($('.file-upload a').attr('href') !== 'undefined'){
-    var thumbURL = $('.file-upload a').attr('href');
-    $('.file-upload').prepend('<img src="' + thumbURL + '" style="max-width:100%;margin-bottom:10px;display:block;">');
-}
