@@ -13,9 +13,9 @@ function load_wysiwyg($par){
             imageGetJson: '/servee_image/recent/',
             documentGetJson: '/servee_document/recent/',
             documentUpload: '/servee_document/upload/',
-            buttons: ['formatting', 'bold', 'italic', '|','link', '|',
-                'unorderedlist', 'orderedlist', 'outdent', 'indent', '|',
-                'image', 'video', '|', 'table', '|', 'horizontalrule', '|', 'html'],
+            buttons: ['formatting', 'bold', 'italic', ,'link',
+                'unorderedlist', 'orderedlist', 'outdent', 'indent',
+                'image', 'video', 'table', 'horizontalrule', 'html'],
             plugins: ['document']
         });
 }
