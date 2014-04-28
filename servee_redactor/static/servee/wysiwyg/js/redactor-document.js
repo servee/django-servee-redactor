@@ -86,7 +86,7 @@ RedactorPlugins.document = {
 				+ '</section>'
 				+ '<footer>'
 					+ '<button class="redactor_modal_btn redactor_btn_modal_close">' + this.opts.curLang.cancel + '</button>'
-					+ '<input type="button" name="upload" class="redactor_modal_btn" id="redactor_upload_btn" value="' + this.opts.curLang.insert + '" />'
+					+ '<button name="upload" class="redactor_modal_btn redactor_modal_action_btn" id="redactor_upload_btn">' + this.opts.curLang.insert + '</button>'
 				+ '</footer>';
 
 		this.buttonAddAfter('image', 'document', 'Document', function()
