@@ -1,0 +1,297 @@
+.redactor_editor {
+  position: relative;
+  overflow: auto;
+  margin: 0 !important;
+  padding: 10px 20px;
+  padding-bottom: 5px;
+  outline: none;
+  background: none;
+  background: #fff;
+  box-shadow: none !important;
+  white-space: normal;
+  border: 1px solid #eee;
+}
+.redactor_editor:focus {
+  outline: none;
+}
+.redactor_editor div,
+.redactor_editor p,
+.redactor_editor ul,
+.redactor_editor ol,
+.redactor_editor table,
+.redactor_editor dl,
+.redactor_editor blockquote,
+.redactor_editor pre,
+.redactor_editor h1,
+.redactor_editor h2,
+.redactor_editor h3,
+.redactor_editor h4,
+.redactor_editor h5,
+.redactor_editor h6 {
+  font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
+}
+.redactor_editor code,
+.redactor_editor pre {
+  font-family: Menlo, Monaco, monospace, sans-serif;
+}
+.redactor_editor div,
+.redactor_editor p,
+.redactor_editor ul,
+.redactor_editor ol,
+.redactor_editor table,
+.redactor_editor dl,
+.redactor_editor blockquote,
+.redactor_editor pre {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.redactor_editor a {
+  color: #15c !important;
+  text-decoration: underline !important;
+}
+.redactor_editor .redactor_placeholder {
+  color: #999 !important;
+  display: block !important;
+}
+/*
+  TYPOGRAPHY
+*/
+.redactor_editor object,
+.redactor_editor embed,
+.redactor_editor video,
+.redactor_editor img {
+  max-width: 100%;
+  width: auto;
+}
+.redactor_editor video,
+.redactor_editor img {
+  height: auto;
+}
+.redactor_editor div,
+.redactor_editor p,
+.redactor_editor ul,
+.redactor_editor ol,
+.redactor_editor table,
+.redactor_editor dl,
+.redactor_editor blockquote,
+.redactor_editor pre {
+  margin: 0;
+  margin-bottom: 10px !important;
+  border: none;
+  background: none !important;
+  box-shadow: none !important;
+}
+.redactor_editor iframe,
+.redactor_editor object,
+.redactor_editor hr {
+  margin-bottom: 15px !important;
+}
+.redactor_editor blockquote {
+  margin-left: 1.5em !important;
+  padding-left: 0 !important;
+  color: #777;
+  font-style: italic !important;
+}
+.redactor_editor ul,
+.redactor_editor ol {
+  padding-left: 2em !important;
+}
+.redactor_editor ul ul,
+.redactor_editor ol ol,
+.redactor_editor ul ol,
+.redactor_editor ol ul {
+  margin: 2px !important;
+  padding: 0 !important;
+  padding-left: 2em !important;
+  border: none;
+}
+.redactor_editor dl dt {
+  font-weight: bold;
+}
+.redactor_editor dd {
+  margin-left: 1em;
+}
+.redactor_editor table {
+  border-collapse: collapse;
+  font-size: 1em !important;
+}
+.redactor_editor table td {
+  padding: 5px !important;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+.redactor_editor table thead td {
+  border-bottom: 2px solid #000 !important;
+  font-weight: bold !important;
+}
+.redactor_editor code {
+  background-color: #d8d7d7 !important;
+}
+.redactor_editor pre {
+  overflow: auto;
+  padding: 1em !important;
+  border: 1px solid #ddd !important;
+  border-radius: 3px !important;
+  background: #f8f8f8 !important;
+  white-space: pre;
+  font-size: 90% !important;
+}
+.redactor_editor hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+/*
+  HEADERS
+*/
+.redactor_editor h1,
+.redactor_editor h2,
+.redactor_editor h3,
+.redactor_editor h4,
+.redactor_editor h5,
+.redactor_editor h6 {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  background: none;
+  color: #000;
+  font-weight: bold;
+}
+.redactor_editor h1 {
+  font-size: 36px !important;
+  line-height: 1.111em !important;
+  margin-bottom: .15em !important;
+}
+.redactor_editor h2 {
+  font-size: 30px !important;
+  line-height: 1.111em !important;
+  margin-bottom: .25em !important;
+}
+.redactor_editor h3 {
+  font-size: 24px !important;
+  line-height: 1.333em !important;
+  margin-bottom: .2em !important;
+}
+.redactor_editor h4 {
+  font-size: 18px !important;
+  line-height: 1.5em !important;
+  margin-bottom: .2em !important;
+}
+.redactor_editor h5 {
+  font-size: 1em !important;
+  line-height: 1.6em !important;
+  margin-bottom: .25em !important;
+}
+.redactor_editor h6 {
+  font-size: .8em !important;
+  line-height: 1.6em !important;
+  text-transform: uppercase;
+  margin-bottom: .3em !important;
+}
+
+
+
+.redactor-toolbar-typewriter .redactor_dropdown .redactor_format_h1,
+.redactor-toolbar-typewriter .redactor_dropdown .redactor_format_h2,
+.redactor-toolbar-typewriter .redactor_dropdown .redactor_format_h3,
+.redactor-toolbar-typewriter .redactor_dropdown .redactor_format_h4,
+.redactor-toolbar-typewriter .redactor_dropdown .redactor_format_h5 {
+  font-size: 1em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+}
+.redactor-toolbar-typewriter .redactor_dropdown .redactor_format_h2 {
+  font-size: .85em;
+}
+/*
+  Typewriter
+*/
+.redactor_editor.redactor-editor-typewriter {
+  background: #f5f5f5 !important;
+  padding: 25px 50px !important;
+}
+.redactor_editor.redactor-editor-typewriter div,
+.redactor_editor.redactor-editor-typewriter p,
+.redactor_editor.redactor-editor-typewriter ul,
+.redactor_editor.redactor-editor-typewriter ol,
+.redactor_editor.redactor-editor-typewriter table,
+.redactor_editor.redactor-editor-typewriter dl,
+.redactor_editor.redactor-editor-typewriter blockquote,
+.redactor_editor.redactor-editor-typewriter pre,
+.redactor_editor.redactor-editor-typewriter h1,
+.redactor_editor.redactor-editor-typewriter h2,
+.redactor_editor.redactor-editor-typewriter h3,
+.redactor_editor.redactor-editor-typewriter h4,
+.redactor_editor.redactor-editor-typewriter h5,
+.redactor_editor.redactor-editor-typewriter h6 {
+  font-family: 'Courier New', 'Lucida Console', Consolas, Monaco, monospace, sans-serif;
+  font-size: 18px !important;
+  line-height: 1.5em !important;
+  margin-bottom: 1.5em !important;
+}
+.redactor_editor.redactor-editor-typewriter h2 {
+  font-size: 14px !important;
+}
+.redactor_editor.redactor-editor-typewriter h1,
+.redactor_editor.redactor-editor-typewriter h2,
+.redactor_editor.redactor-editor-typewriter h3,
+.redactor_editor.redactor-editor-typewriter h4,
+.redactor_editor.redactor-editor-typewriter h5,
+.redactor_editor.redactor-editor-typewriter h6 {
+  text-transform: uppercase;
+}
+.redactor_editor.redactor-editor-typewriter a {
+  color: #000 !important;
+  text-decoration: underline !important;
+}
+/*
+  WYM
+*/
+.redactor_editor.redactor_editor_wym {
+  padding: 10px 7px 0 7px !important;
+  background: #f6f6f6 !important;
+}
+.redactor_editor.redactor_editor_wym div,
+.redactor_editor.redactor_editor_wym p,
+.redactor_editor.redactor_editor_wym ul,
+.redactor_editor.redactor_editor_wym ol,
+.redactor_editor.redactor_editor_wym table,
+.redactor_editor.redactor_editor_wym dl,
+.redactor_editor.redactor_editor_wym pre,
+.redactor_editor.redactor_editor_wym h1,
+.redactor_editor.redactor_editor_wym h2,
+.redactor_editor.redactor_editor_wym h3,
+.redactor_editor.redactor_editor_wym h4,
+.redactor_editor.redactor_editor_wym h5,
+.redactor_editor.redactor_editor_wym h6,
+.redactor_editor.redactor_editor_wym blockquote {
+  margin-top: 0;
+  margin-bottom: 5px !important;
+  padding: 10px !important;
+  border: 1px solid #e4e4e4 !important;
+  background-color: #fff !important;
+}
+.redactor_editor.redactor_editor_wym blockquote:before {
+  content: '';
+}
+.redactor_editor.redactor_editor_wym img {
+  position: relative;
+  z-index: 2;
+}
+.redactor_editor.redactor_editor_wym div {
+  border: 1px dotted #aaa !important;
+}
+.redactor_editor.redactor_editor_wym pre {
+  border: 2px dashed #e4e4e4 !important;
+  background-color: #f8f8f8 !important;
+}
+.redactor_editor.redactor_editor_wym ul,
+.redactor_editor.redactor_editor_wym ol {
+  padding-left: 2em !important;
+}
+.redactor_editor.redactor_editor_wym ul li ul,
+.redactor_editor.redactor_editor_wym ol li ul,
+.redactor_editor.redactor_editor_wym ul li ol,
+.redactor_editor.redactor_editor_wym ol li ol {
+  border: none !important;
+}

@@ -1,3 +1,6 @@
+//@codekit-prepend "redactor.js";
+//@codekit-prepend "redactor-document.js";
+
 function load_wysiwyg($par){
     $par.find('textarea:not(.no_wysiwyg)').redactor({
             focus: true,
