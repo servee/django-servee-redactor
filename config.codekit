@@ -23,15 +23,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-styles.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-styles.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/redactor-servee-ck.js": {
 		"fileType": 64,
 		"ignore": 1,

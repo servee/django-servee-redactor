@@ -12,9 +12,9 @@ function load_wysiwyg($par){
             toolbarFixedBox: true,
             convertImageLinks: true,
             convertVideoLinks: true,
-            imageUpload: '/en/servee_image/upload/',
-            imageGetJson: '/en/servee_image/recent/',
-            fileUpload: '/en/servee_document/upload/',
+            imageUpload: '/servee_image/upload/',
+            imageGetJson: '/servee_image/recent/',
+            fileUpload: '/servee_document/upload/',
             buttons: ['formatting', 'bold', 'italic', ,'link',
                 'unorderedlist', 'orderedlist', 'outdent', 'indent',
                 'image', 'file', 'video', 'table', 'horizontalrule', 'html']
