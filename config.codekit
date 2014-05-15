@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16903",
+"creatorBuild": "16921",
 "files": {
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
@@ -16,9 +16,18 @@
 		},
 	"\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-servee.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-servee.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-styles.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -29,17 +38,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/redactor-servee-ck.js",
 		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/min\/redactor-servee-ck-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/redactor-document.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/redactor-document.js",
-		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/redactor-document-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -77,26 +75,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/less\/redactor-app.less",
 		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-app.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/servee_redactor\/static\/servee\/wysiwyg\/less\/redactor-document-plugin.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/less\/redactor-document-plugin.less",
-		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-document-plugin.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -153,8 +131,8 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/less\/redactor-styles.less",
 		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor-styles.css",
 		"outputPathIsOutsideProject": 0,
@@ -253,6 +231,14 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"no_empty_param_list": {
 			"active": 0,
 			"flagValue": -1
@@ -262,6 +248,10 @@
 			"flagValue": -1
 			},
 		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -287,6 +277,10 @@
 			},
 		"no_trailing_whitespace": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"non_empty_constructor_needs_parens": {
@@ -407,10 +401,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"gcl": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -523,10 +513,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"onevar": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"phantom": {
 			"active": 0,
 			"flagValue": -1
@@ -563,10 +549,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"smarttabs": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"strict": {
 			"active": 0,
 			"flagValue": -1
@@ -579,10 +561,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"trailing": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"typed": {
 			"active": 0,
 			"flagValue": -1
@@ -593,10 +571,6 @@
 			},
 		"unused": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"white": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"withstmt": {

@@ -1,5 +1,5 @@
 //@codekit-prepend "redactor.js";
-//@codekit-prepend "redactor-document.js";
+//@codekit-dont-prepend "redactor-document.js";
 
 function load_wysiwyg($par){
     $par.find('textarea:not(.no_wysiwyg)').redactor({
@@ -12,13 +12,12 @@ function load_wysiwyg($par){
             toolbarFixedBox: true,
             convertImageLinks: true,
             convertVideoLinks: true,
-            imageUpload: '/servee_image/upload/',
-            imageGetJson: '/servee_image/recent/',
-            documentGetJson: '/servee_document/recent/',
-            documentUpload: '/servee_document/upload/',
+            imageUpload: '/en/servee_image/upload/',
+            imageGetJson: '/en/servee_image/recent/',
+            fileUpload: '/en/servee_document/upload/',
             buttons: ['formatting', 'bold', 'italic', ,'link',
                 'unorderedlist', 'orderedlist', 'outdent', 'indent',
-                'image', 'video', 'table', 'horizontalrule', 'html'],
-            plugins: ['document']
+                'image', 'file', 'video', 'table', 'horizontalrule', 'html']
+
         });
 }
