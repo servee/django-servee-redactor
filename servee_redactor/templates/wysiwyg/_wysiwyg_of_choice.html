@@ -1,2 +1,3 @@
-<link rel="stylesheet" href="{{ STATIC_URL }}servee/wysiwyg/css/redactor-servee.css?cacheBust061114" />
-<script type="text/javascript" src="{{ STATIC_URL }}servee/wysiwyg/js/min/redactor-servee-ck.js?cacheBust061114"></script>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'servee/wysiwyg/css/redactor-servee.css' %}?cacheBust061114" />
+<script type="text/javascript" src="{% static 'servee/wysiwyg/js/min/redactor-servee-ck.js' %}?cacheBust061114"></script>
