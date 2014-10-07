@@ -9,6 +9,7 @@ function load_wysiwyg($par){
             focus: true,
             replaceDivs: false,
             toolbarFixed: true,
+            buttonSource: true,
             imageUpload: '/servee_image/upload/',
             imageManagerJson: '/servee_image/recent/',
             fileUpload: '/servee_document/upload/',
