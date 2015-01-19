@@ -209,25 +209,29 @@ if (!RedactorPlugins) var RedactorPlugins = {};
 		},
 			addHead: function()
 			{
-			var $table = this.table.getTable();
-			if (!$table) return;
+				var $table = this.table.getTable();
+				if (!$table) return;
 
-			this.buffer.set();
+				this.buffer.set();
 
-			if ($table.find('thead').size() !== 0)
-			{
-				this.table.deleteHead();
-				return;
-			}
+				if ($table.find('thead').size() !== 0)
+				{
+					this.table.deleteHead();
+					return;
+				}
 
-			var tr = $table.find('tr').first().clone();
-			tr.find('td').html(this.opts.invisibleSpace);
-			$thead = $('<thead></thead>').append(tr);
-			$table.prepend($thead);
+				var tr = $table.find('tr').first().clone();
+				tr.find('td').replaceWith($.proxy(function()
+				{
+					return $('<th>').html(this.opts.invisibleSpace);
+				}, this));
 
-			this.code.sync();
+				$thead = $('<thead></thead>').append(tr);
+				$table.prepend($thead);
 
-		},
+				this.code.sync();
+
+			},
 			deleteHead: function()
 			{
 				var $table = this.table.getTable();

@@ -5,28 +5,28 @@
     clear: both;
   }
 }
-.transition(@transition: all linear .2s) {
+.transition-redactor(@transition: all linear .2s) {
   -moz-transition: @transition;
   transition: @transition;
 }
 
-.opacity(@opacity: 100) {
+.opacity-redactor(@opacity: 100) {
   filter: e(%("alpha(opacity=%d)", @opacity));
   -moz-opacity: @opacity / 100;
   opacity: @opacity / 100;
 }
-.box-sizing(@box-model) {
+.box-sizing-redactor(@box-model) {
   -webkit-box-sizing: @box-model;
   -moz-box-sizing: @box-model;
   box-sizing: @box-model;
 }
-.striped(@color: rgba(255, 255, 255, .2); @angle: 45deg) {
+.striped-redactor(@color: rgba(255, 255, 255, .2); @angle: 45deg) {
   background-image: -webkit-linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);
   background-image: linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);
 }
 
-.animation(@animation) {
+.animation-redactor(@animation) {
   -webkit-animation: @animation;
   -o-animation: @animation;
   animation: @animation;
@@ -44,7 +44,7 @@
 */
 @font-face {
   font-family: 'RedactorFont';
-  src: url('../fonts/redactor-font.eot');
+  src: url('redactor-font.eot');
 }
 @font-face {
   font-family: 'RedactorFont';
@@ -61,21 +61,14 @@
 .redactor-box {
   position: relative;
   overflow: visible;
-  background: #fff;
   margin-bottom: 24px;
 
-  & iframe,
   & textarea {
     display: block;
     position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
-  }
-  & iframe {
-    border: 1px solid #eee;
-  }
-  & textarea {
     overflow: auto;
     outline: none;
     border: none;
@@ -96,6 +89,11 @@
 */
 
 .redactor-editor,
+.redactor-box {
+  background: #fff;
+}
+
+.redactor-editor,
 .redactor-box,
 .redactor-box textarea {
   z-index: auto !important;
@@ -105,12 +103,12 @@
 }
 .redactor-toolbar,
 .redactor-dropdown {
-  z-index: 1050 !important;
+  z-index: 1053 !important;
 }
 #redactor-modal-overlay,
 #redactor-modal-box,
 #redactor-modal {
-  z-index: 1051 !important;
+  z-index: 1054 !important;
 }
 
 
@@ -139,6 +137,32 @@ body .redactor-box-fullscreen {
     top: 0;
     left: 0;
     width: 100%;
+}
+
+/*
+  Utils
+*/
+.body-redactor-hidden {
+  overflow: hidden;
+}
+
+/*
+  Editor
+*/
+.redactor-editor {
+  position: relative;
+  overflow: auto;
+  margin: 0 !important;
+  padding: 20px;
+  outline: none;
+  white-space: normal;
+  border: 1px solid #eee;
+  font-family: @redactorFontFamily;
+  font-size: @redactorFontSize;
+  line-height: @redactorLineHeight;
+  &:focus {
+    outline: none;
+  }
 }
 
 /*
@@ -198,7 +222,7 @@ body .redactor-box-fullscreen {
     padding: 0 !important;
     outline: none;
     list-style: none !important;
-    .box-sizing(content-box);
+    .box-sizing-redactor(content-box);
   }
   & li a {
     display: block;
@@ -211,7 +235,7 @@ body .redactor-box-fullscreen {
     text-decoration: none;
     cursor: pointer;
     zoom: 1;
-    .box-sizing(content-box);
+    .box-sizing-redactor(content-box);
   }
   & li a {
     &:hover {
@@ -241,7 +265,7 @@ body .redactor-box-fullscreen {
     line-height: 1;
   }
   & li a.redactor-button-disabled {
-    .opacity(30);
+    .opacity-redactor(30);
     &:hover {
       color: #333;
       outline: none;
@@ -375,7 +399,7 @@ body .redactor-box-fullscreen {
 */
 .redactor-toolbar-tooltip {
   position: absolute;
-  z-index: 100;
+  z-index: 1054;
   text-align: center;
   top: 0;
   left: 0;
@@ -525,8 +549,8 @@ body .redactor-box-fullscreen {
   width: 100%;
   height: 100%;
   background-color: #3d58a8;
-  .striped();
-  .animation(progress-bar-stripes 2s linear infinite);
+  .striped-redactor();
+  .animation-redactor(progress-bar-stripes 2s linear infinite);
   background-size: 40px 40px;
 }
 
@@ -556,7 +580,7 @@ body .redactor-box-fullscreen {
   width: 100%;
   height: 100%;
   background-color: #000 !important;
-  .opacity(30);
+  .opacity-redactor(30);
 }
 #redactor-modal-box {
   position: fixed;
@@ -618,7 +642,7 @@ body .redactor-box-fullscreen {
     width: 100%;
     font-size: 14px;
     font-family: @redactorFontFamily;
-    .transition(border 0.3s ease-in);
+    .transition-redactor(border 0.3s ease-in);
     &:focus {
       outline: none;
       border-color: #5ca9e4;
@@ -798,3 +822,4 @@ body .redactor-box-fullscreen {
     font-weight: bold;
   }
 }
+
