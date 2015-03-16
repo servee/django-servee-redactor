@@ -83,32 +83,33 @@
     }
   }
 }
-
-/*
-  Z-index setup
-*/
-
 // .redactor-editor,
 // .redactor-box {
 //   background: #fff;
 // }
 
+
+/*
+  Z-index setup
+*/
 .redactor-editor,
 .redactor-box,
 .redactor-box textarea {
-  z-index: auto !important;
+  z-index: auto;
 }
 .redactor-box-fullscreen {
-  z-index: 1052 !important;
+  z-index: 1051;
 }
-.redactor-toolbar,
+.redactor-toolbar {
+  z-index: 100;
+}
 .redactor-dropdown {
-  z-index: 1053 !important;
+  z-index: 1052;
 }
 #redactor-modal-overlay,
 #redactor-modal-box,
 #redactor-modal {
-  z-index: 1054 !important;
+  z-index: 1053;
 }
 
 
@@ -149,20 +150,8 @@ body .redactor-box-fullscreen {
 /*
   Editor
 */
-.redactor-editor {
-  position: relative;
-  overflow: auto;
-  margin: 0 !important;
-  // padding: 20px;
-  outline: none;
-  white-space: normal;
-  // border: 1px solid #eee;
-  // font-family: @redactorFontFamily;
-  // font-size: @redactorFontSize;
-  // line-height: @redactorLineHeight;
-  &:focus {
-    outline: none;
-  }
+.toolbar-fixed-box + .redactor-editor {
+  padding-top: 32px !important;
 }
 
 /*
@@ -698,7 +687,7 @@ body .redactor-box-fullscreen {
     padding-left: 0;
     list-style: none;
     max-height: 250px;
-    overflow-x: scroll;
+    overflow-x: auto;
     & li {
       border-bottom: 1px solid #ddd;
       &:last-child {
@@ -822,4 +811,3 @@ body .redactor-box-fullscreen {
     font-weight: bold;
   }
 }
-

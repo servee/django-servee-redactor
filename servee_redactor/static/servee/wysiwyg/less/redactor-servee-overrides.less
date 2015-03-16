@@ -1,7 +1,20 @@
 .redactor-editor {
   outline:none;
   border: 0 none;
+  position: relative;
+  overflow: auto;
+  margin: 0 !important;
+  // padding: 20px;
+  white-space: normal;
+  // border: 1px solid #eee;
+  // font-family: @redactorFontFamily;
+  // font-size: @redactorFontSize;
+  // line-height: @redactorLineHeight;
+  &:focus {
+    outline: none;
+  }
 }
+
 .redactor-toolbar{
   box-shadow:none;
   li{
@@ -14,6 +27,7 @@
 .redactor-box,
 .redactor-toolbar{
   background:transparent;
+  clear:both;
   .toolbar-fixed-box{
     box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
     background:#fff;
