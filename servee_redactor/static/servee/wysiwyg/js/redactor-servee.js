@@ -23,7 +23,14 @@ function load_wysiwyg($par){
 
             buttons: ['formatting', 'bold', 'italic', ,'link',
                 'unorderedlist', 'orderedlist', 'outdent', 'indent',
-                'image', 'file', 'video', 'table', 'horizontalrule', 'html']
-
+                'image', 'file', 'video', 'table', 'horizontalrule', 'html'],
+            // if jquery matchheight exists, this will fire it after
+            // redactor loads and on change. We'll see how this goes.
+            initCallback: function(){
+                $.fn.matchHeight._update();
+            },
+            changeCallback: function(){
+                $.fn.matchHeight._update();
+            }
         });
 }
