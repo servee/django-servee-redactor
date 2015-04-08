@@ -27,10 +27,14 @@ function load_wysiwyg($par){
             // if jquery matchheight exists, this will fire it after
             // redactor loads and on change. We'll see how this goes.
             initCallback: function(){
-                $.fn.matchHeight._update();
+                if (typeof matchHeight == 'function') {
+                  $.fn.matchHeight._update();
+                }
             },
             changeCallback: function(){
-                $.fn.matchHeight._update();
+                if (typeof matchHeight == 'function') {
+                  $.fn.matchHeight._update();
+                }
             }
         });
 }

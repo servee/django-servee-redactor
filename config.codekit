@@ -34,6 +34,50 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/filemanager.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/filemanager.js",
+		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/min\/filemanager-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/imagemanager.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/imagemanager.js",
+		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/min\/imagemanager-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/table.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/table.js",
+		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/min\/table-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/video.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/video.js",
+		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/plugins\/min\/video-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/redactor-servee.js": {
 		"fileType": 64,
 		"ignore": 0,
