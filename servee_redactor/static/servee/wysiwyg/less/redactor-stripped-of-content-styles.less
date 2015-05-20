@@ -83,10 +83,10 @@
     }
   }
 }
-// .redactor-editor,
-// .redactor-box {
-//   background: #fff;
-// }
+.redactor-editor,
+.redactor-box {
+  background: #fff;
+}
 
 
 /*
@@ -150,6 +150,7 @@ body .redactor-box-fullscreen {
 /*
   Editor
 */
+
 .toolbar-fixed-box + .redactor-editor {
   padding-top: 32px !important;
 }
@@ -262,6 +263,13 @@ body .redactor-box-fullscreen {
       cursor: default;
     }
   }
+}
+
+/*
+  CodeMirror
+*/
+.redactor-box .CodeMirror {
+  display:none;
 }
 
 /*

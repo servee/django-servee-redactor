@@ -3,38 +3,48 @@
 //@codekit-prepend "plugins/video.js";
 //@codekit-prepend "plugins/imagemanager.js";
 //@codekit-prepend "plugins/filemanager.js";
+//@codekit-prepend "codemirror.min.js";
 
 function load_wysiwyg($par){
     $par.find('textarea:not(.no_wysiwyg)').redactor({
-            focus: true,
-            replaceDivs: false,
-            toolbarFixed: true,
-            buttonSource: true,
-            imageUpload: '/servee_image/upload/',
-            imageManagerJson: '/servee_image/recent/',
-            fileUpload: '/servee_document/upload/',
-            fileManagerJson: '/servee_document/recent/',
-            plugins: [
-            'imagemanager',
-            'filemanager',
-            'table',
-            'video'
-            ],
+        focus: true,
+        replaceDivs: false,
+        toolbarFixed: true,
+        buttonSource: true,
+        imageUpload: '/servee_image/upload/',
+        imageManagerJson: '/servee_image/recent/',
+        fileUpload: '/servee_document/upload/',
+        fileManagerJson: '/servee_document/recent/',
+        plugins: [
+        'imagemanager',
+        'filemanager',
+        'table',
+        'video'
+        ],
+        codemirror: true,
 
-            buttons: ['formatting', 'bold', 'italic', ,'link',
-                'unorderedlist', 'orderedlist', 'outdent', 'indent',
-                'image', 'file', 'video', 'table', 'horizontalrule', 'html'],
-            // if jquery matchheight exists, this will fire it after
-            // redactor loads and on change. We'll see how this goes.
-            initCallback: function(){
-                if (typeof $.fn.matchHeight == 'function') {
-                  $.fn.matchHeight._update();
-                }
-            },
-            changeCallback: function(){
-                if (typeof $.fn.matchHeight == 'function') {
-                  $.fn.matchHeight._update();
-                }
+        buttons: ['formatting', 'bold', 'italic', ,'link',
+            'unorderedlist', 'orderedlist', 'outdent', 'indent',
+            'image', 'file', 'video', 'table', 'horizontalrule', 'html'],
+        // if jquery matchheight exists, this will fire it after
+        // redactor loads and on change. We'll see how this goes.
+        initCallback: function(){
+            if (typeof $.fn.matchHeight == 'function') {
+              $.fn.matchHeight._update();
             }
-        });
+        },
+        changeCallback: function(){
+            if (typeof $.fn.matchHeight == 'function') {
+              $.fn.matchHeight._update();
+            }
+        }
+    });
+
+// init codemirror after redactor's call
+    var editor = CodeMirror.fromTextArea($("#redactor")[0], {
+        lineNumbers: true,
+        mode: "text/html",
+        matchBrackets: true
+    });
+
 }
