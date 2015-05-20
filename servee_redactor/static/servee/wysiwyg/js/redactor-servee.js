@@ -3,7 +3,6 @@
 //@codekit-prepend "plugins/video.js";
 //@codekit-prepend "plugins/imagemanager.js";
 //@codekit-prepend "plugins/filemanager.js";
-//@codekit-prepend "codemirror.min.js";
 
 function load_wysiwyg($par){
     $par.find('textarea:not(.no_wysiwyg)').redactor({
@@ -41,7 +40,7 @@ function load_wysiwyg($par){
     });
 
 // init codemirror after redactor's call
-    var editor = CodeMirror.fromTextArea($("#redactor")[0], {
+    var editor = CodeMirror.fromTextArea($par.find('textarea:not(.no_wysiwyg)')[0], {
         lineNumbers: true,
         mode: "text/html",
         matchBrackets: true
