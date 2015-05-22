@@ -41,12 +41,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/codemirror.min.js": {
+	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/codemirror.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/codemirror.min.js",
-		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/codemirror.min-min.js",
+		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/codemirror.min.js",
+		"outputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/min\/codemirror.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
