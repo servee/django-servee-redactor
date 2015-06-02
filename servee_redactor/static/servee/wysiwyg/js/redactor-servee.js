@@ -43,7 +43,7 @@ function load_wysiwyg($par){
     function editor(id)
     {
         CodeMirror.fromTextArea(id, {
-            lineNumbers: true,
+            lineNumbers: false,
             mode: "text/html",
             matchBrackets: true
         });
