@@ -51,14 +51,8 @@ function load_wysiwyg($par){
 
 
     editor($par.find('textarea:not(.no_wysiwyg)')[0]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[1]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[2]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[3]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[4]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[5]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[6]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[7]);
-    editor($par.find('textarea:not(.no_wysiwyg)')[8]);
+    editor($('#id_content_html')[0]);
+
 
 }
 
