@@ -40,10 +40,23 @@ function load_wysiwyg($par){
     });
 
 // init codemirror after redactor's call
-    var editor = CodeMirror.fromTextArea($par.find('textarea:not(.no_wysiwyg)')[0, 1, 2], {
-        lineNumbers: true,
-        mode: "text/html",
-        matchBrackets: true
-    });
+    function editor(id)
+    {
+        CodeMirror.fromTextArea(id, {
+            lineNumbers: true,
+            mode: "text/html",
+            matchBrackets: true
+        });
+    }
+
+
+    editor($par.find('textarea:not(.no_wysiwyg)')[0]);
+    editor($par.find('textarea:not(.no_wysiwyg)')[1]);
+    editor($par.find('textarea:not(.no_wysiwyg)')[2]);
+    editor($par.find('textarea:not(.no_wysiwyg)')[3]);
 
 }
+
+
+
+
