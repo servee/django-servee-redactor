@@ -40,7 +40,7 @@ function load_wysiwyg($par){
     });
 
 // init codemirror after redactor's call
-    var editor = CodeMirror.fromTextArea($par.find('textarea:not(.no_wysiwyg)'), {
+    var editor = CodeMirror.fromTextArea($par.find('textarea:not(.no_wysiwyg)')[0, 1, 2], {
         lineNumbers: true,
         mode: "text/html",
         matchBrackets: true
