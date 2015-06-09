@@ -256,10 +256,6 @@ body .redactor-box-fullscreen {
 			background-color: #ccc;
 			color: #444;
 		}
-		&:focus {
-			background:#000;
-			color:#fff;
-		}
 	}
 	& li a.redactor-btn-image {
 		width: 14px;
@@ -954,7 +950,6 @@ body .redactor-box-fullscreen {
 	  background-color: #d8d7d7;
 	}
 	pre {
-	  overflow: auto;
 	  padding: 1em;
 	  border: 1px solid #ddd;
 	  border-radius: 3px;
@@ -1007,109 +1002,4 @@ body .redactor-box-fullscreen {
 	  font-size: 12px;
 	  text-transform: uppercase;
 	}
-}
-
-.redactor-box-contrast {
-
-    & .redactor-editor {
-        background: #000;
-        color: #fff;
-        border-color: #000;
-        & h1,
-        & h2,
-        & h3,
-        & h4,
-        & h5,
-        & h6,
-        & blockquote,
-        & a {
-            color: #fff;
-        }
-        & pre {
-            background: none;
-        }
-        & table {
-            & td,
-            & th {
-                border-color: #fff;
-            }
-        }
-    }
-    & .redactor-toolbar {
-        background: #000;
-        box-shadow: none;
-        & li a {
-            color: #fff;
-            &:active,
-            &.redactor-act {
-                outline: none;
-                background-color: #fff;
-                color: #000;
-            }
-        }
-    }
-}
-.redactor-dropdown-contrast {
-    background: #000;
-    box-shadow: none;
-    border: 1px solid #fff;
-    & a {
-        color: #fff;
-        border-bottom-color: #fff;
-    }
-}
-.redactor-modal-contrast {
-    background: #000;
-    color: #fff;
-    & #redactor-modal-close {
-        &:hover {
-            color: #fff;
-        }
-    }
-    & footer button {
-        background-color: #000;
-        color: #fff;
-        &:hover {
-            color: #000;
-            background: #fff;
-        }
-    }
-    & #redactor-modal-list {
-        & li {
-            color: #fff;
-            border-bottom-color: #fff;
-        }
-        & a {
-            color: #fff;
-            &:hover {
-                background-color: #fff;
-            }
-        }
-    }
-    & #redactor-modal-tabber {
-        & a {
-            border-color: #fff;
-            color: #fff;
-            &:hover,
-            &.active {
-                background-color: #fff;
-                border-color: #fff;
-                color: #000;
-            }
-        }
-    }
-    & #redactor-droparea {
-        border-color: #fff;
-        &.drag-hover,
-        &.drag-drop {
-            background: none;
-        }
-    }
-    & #redactor-droparea-placeholder {
-        color: #fff;
-    }
-}
-
-.redactor-voice-label {
-	display:none;
 }

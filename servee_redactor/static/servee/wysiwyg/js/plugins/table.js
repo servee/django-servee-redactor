@@ -55,7 +55,8 @@ if (!RedactorPlugins) var RedactorPlugins = {};
 			},
 			insert: function()
 			{
-
+				this.placeholder.remove();
+				
 				var rows = $('#redactor-table-rows').val(),
 					columns = $('#redactor-table-columns').val(),
 					$tableBox = $('<div>'),
@@ -86,7 +87,6 @@ if (!RedactorPlugins) var RedactorPlugins = {};
 				$tableBox.append($table);
 				var html = $tableBox.html();
 
-
 				this.modal.close();
 				this.selection.restore();
 
@@ -102,12 +102,19 @@ if (!RedactorPlugins) var RedactorPlugins = {};
 				}
 				else
 				{
-					this.insert.html(html);
+					this.insert.html(html, false);
 				}
 
 				this.selection.restore();
 
 				var table = this.$editor.find('#table' + tableId);
+				
+				var p = table.prev("p");
+				
+				if (p.length > 0 && this.utils.isEmpty(p.html()))
+				{
+					p.remove();
+				}
 
 				if (!this.opts.linebreaks && (this.utils.browser('mozilla') || this.utils.browser('msie')))
 				{

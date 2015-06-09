@@ -32,15 +32,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/servee_redactor\/static\/servee\/wysiwyg\/css\/redactor.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/servee_redactor\/static\/servee\/wysiwyg\/js\/min\/codemirror.min.js": {
 		"fileType": 64,
 		"ignore": 0,
