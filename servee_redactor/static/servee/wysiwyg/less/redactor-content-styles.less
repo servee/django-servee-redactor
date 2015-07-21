@@ -1,4 +1,4 @@
-//Line 86 from original
+//Line 82 from original
 .redactor-editor,
 .redactor-box {
   background: #fff;
@@ -7,7 +7,7 @@
 
 
 /*
-  Editor ...This part is from Line 153 of the original redactor.less file
+  Editor ...This part is from Line 127 of the original redactor.less file
 */
 
 .redactor-editor {
@@ -15,6 +15,7 @@
   overflow: auto;
   margin: 0 !important;
   padding: 20px;
+  min-height: 80px;
   outline: none;
   white-space: normal;
   border: 1px solid #eee;
@@ -25,19 +26,18 @@
     outline: none;
   }
 }
-
 /*
   ##############################################
 
-   CONTENT STYLES --line 829 of original redactor.less file
+   CONTENT STYLES --line 827 of original redactor.less file
 
   ##############################################
 */
-
 .redactor-editor {
   code,
   pre {
     font-family: @redactorCodeFontFamily;
+    cursor: text;
   }
   div,
   p,
@@ -141,7 +141,6 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     background: #f8f8f8;
-    white-space: pre;
     font-size: 90%;
   }
   hr {
