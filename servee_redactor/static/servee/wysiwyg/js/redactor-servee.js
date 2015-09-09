@@ -30,18 +30,18 @@ function load_wysiwyg($par){
         // if jquery matchheight exists, this will fire it after
         // redactor loads and on change. We'll see how this goes.
         initCallback: function(){
-            if (typeof $.fn.matchHeight == 'function') {
+            if (typeof $.fn.matchHeight === 'function') {
               $.fn.matchHeight._update();
             }
         },
         changeCallback: function(){
-            if (typeof $.fn.matchHeight == 'function') {
+            if (typeof $.fn.matchHeight === 'function') {
               $.fn.matchHeight._update();
             }
         }
     });
 
-// init codemirror after redactor's call
+//init codemirror after redactor's call
     function editor(id)
     {
         CodeMirror.fromTextArea(id, {
@@ -53,13 +53,17 @@ function load_wysiwyg($par){
 
 
     editor($par.find('textarea:not(.no_wysiwyg)')[0]);
-    editor($('#id_content_html')[0]);
-    editor($('#id_quote_citation')[0]);
-    editor($('#id_quote_content')[0]);
 
-
-
-}
+    if ($('#id_content_html').length > 0 ){
+        editor($('#id_content_html')[0]);
+    }
+    if ($('#id_quote_citation').length > 0){
+        editor($('#id_quote_citation')[0]);
+    }
+    if ($('#id_quote_content').length > 0){
+        editor($('#id_quote_content')[0]);
+    }
+ }
 
 
 
