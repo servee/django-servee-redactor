@@ -3,6 +3,7 @@
 //@codekit-prepend "plugins/video.js";
 //@codekit-prepend "plugins/imagemanager.js";
 //@codekit-prepend "plugins/filemanager.js";
+//@codekit-prepend "plugins/fullscreen.js";
 
 function load_wysiwyg($par){
     $par.find('textarea:not(.no_wysiwyg)').redactor({
@@ -18,13 +19,14 @@ function load_wysiwyg($par){
         'imagemanager',
         'filemanager',
         'table',
-        'video'
+        'video',
+        'fullscreen'
         ],
         codemirror: true,
 
         buttons: ['formatting', 'bold', 'italic', ,'link',
             'unorderedlist', 'orderedlist', 'outdent', 'indent',
-            'image', 'file', 'video', 'table', 'horizontalrule', 'html'],
+            'image', 'file', 'video', 'table', 'horizontalrule', 'html', 'fullscreen'],
         // if jquery matchheight exists, this will fire it after
         // redactor loads and on change. We'll see how this goes.
         initCallback: function(){
@@ -52,6 +54,9 @@ function load_wysiwyg($par){
 
     editor($par.find('textarea:not(.no_wysiwyg)')[0]);
     editor($('#id_content_html')[0]);
+    editor($('#id_quote_citation')[0]);
+    editor($('#id_quote_content')[0]);
+
 
 
 }
