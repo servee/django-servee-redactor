@@ -11,10 +11,12 @@ function load_wysiwyg($par){
         replaceDivs: false,
         toolbarFixed: true,
         buttonSource: true,
-        imageUpload: '/servee_image/upload/',
-        imageManagerJson: '/servee_image/recent/',
-        fileUpload: '/servee_document/upload/',
-        fileManagerJson: '/servee_document/recent/',
+        imageUpload: '/oldcontrib/media/images/upload/',
+        imageManagerJson: '/oldcontrib/media/images/recent/',
+        fileUpload: '/oldcontrib/media/docs/upload/',
+        fileManagerJson: '/oldcontrib/media/docs/recent/',
+
+
         plugins: [
         'imagemanager',
         'filemanager',
