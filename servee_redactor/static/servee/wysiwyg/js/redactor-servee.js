@@ -3,7 +3,7 @@
 //@codekit-prepend "plugins/video.js";
 //@codekit-prepend "plugins/imagemanager.js";
 //@codekit-prepend "plugins/filemanager.js";
-//@codekit-prepend "plugins/fullscreen.js";
+//@codekit-prepend "plugins/codemirror.js";
 
 function load_wysiwyg($par){
     $par.find('textarea:not(.no_wysiwyg)').redactor({
@@ -15,18 +15,36 @@ function load_wysiwyg($par){
         imageManagerJson: '/servee_image/recent/',
         fileUpload: '/servee_document/upload/',
         fileManagerJson: '/servee_document/recent/',
+        imageResizable: true,
+        imagePosition: true,
         plugins: [
         'imagemanager',
         'filemanager',
         'table',
         'video',
-        'fullscreen'
+        'codemirror'
         ],
-        codemirror: true,
+        codemirror: {
+            lineNumbers: false,
+            lineWrapping: true,
+            mode: "htmlmixed",
+            matchBrackets: true,
+            indentUnit: 4
+        },
 
-        buttons: ['formatting', 'bold', 'italic', ,'link',
-            'unorderedlist', 'orderedlist', 'outdent', 'indent',
-            'image', 'file', 'video', 'table', 'horizontalrule', 'html', 'fullscreen'],
+        buttons: [
+          'format',
+          'bold',
+          'italic',
+          'lists',
+          'image',
+          'file',
+          'link',
+          'video',
+          'table',
+          'horizontalrule',
+          'html'
+        ],
         // if jquery matchheight exists, this will fire it after
         // redactor loads and on change. We'll see how this goes.
         initCallback: function(){
@@ -64,7 +82,3 @@ function load_wysiwyg($par){
         editor($('#id_quote_content')[0]);
     }
  }
-
-
-
-
