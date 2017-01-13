@@ -17,6 +17,7 @@ function load_wysiwyg($par){
         fileManagerJson: '/servee_document/recent/',
         imageResizable: true,
         imagePosition: true,
+        overrideStyles: false,
         plugins: [
         'imagemanager',
         'filemanager',
@@ -60,25 +61,25 @@ function load_wysiwyg($par){
     });
 
 //init codemirror after redactor's call
-    function editor(id)
-    {
-        CodeMirror.fromTextArea(id, {
-            lineNumbers: false,
-            mode: "text/html",
-            matchBrackets: true
-        });
-    }
+    // function editor(id)
+    // {
+    //     CodeMirror.fromTextArea(id, {
+    //         lineNumbers: false,
+    //         mode: "text/html",
+    //         matchBrackets: true
+    //     });
+    // }
 
-
-    editor($par.find('textarea:not(.no_wysiwyg)')[0]);
-
-    if ($('#id_content_html').length > 0 ){
-        editor($('#id_content_html')[0]);
-    }
-    if ($('#id_quote_citation').length > 0){
-        editor($('#id_quote_citation')[0]);
-    }
-    if ($('#id_quote_content').length > 0){
-        editor($('#id_quote_content')[0]);
-    }
+    //
+    // editor($par.find('textarea:not(.no_wysiwyg)')[0]);
+    //
+    // if ($('#id_content_html').length > 0 ){
+    //     editor($('#id_content_html')[0]);
+    // }
+    // if ($('#id_quote_citation').length > 0){
+    //     editor($('#id_quote_citation')[0]);
+    // }
+    // if ($('#id_quote_content').length > 0){
+    //     editor($('#id_quote_content')[0]);
+    // }
  }

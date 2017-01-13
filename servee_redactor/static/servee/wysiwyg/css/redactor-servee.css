@@ -1346,10 +1346,7 @@ div.CodeMirror-cursors {
   .redactor-toolbar li {
     background-image: none; }
     .redactor-toolbar li a {
-      padding: 9px 10px !important;
-      color: #333 !important;
-      font-size: 18px !important;
-      font-weight: 300 !important; }
+      color: #333 !important; }
 
 .redactor_box textarea {
   min-height: 100px; }
