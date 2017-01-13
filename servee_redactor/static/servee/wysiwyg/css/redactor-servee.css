@@ -1334,7 +1334,8 @@ div.CodeMirror-cursors {
   border: 0 none;
   position: relative;
   overflow: auto;
-  margin: 0 !important;
+  margin: 0;
+  padding: 0;
   white-space: normal;
   background: transparent; }
   .redactor-editor:focus {
@@ -1386,6 +1387,8 @@ div.CodeMirror-cursors {
 
 #redactor-modal-close {
   z-index: 30; }
+  #redactor-modal-close:after {
+    background-color: transparent; }
 
 div#redactor-image-manager-box img {
   margin: 0 10px 10px 0;

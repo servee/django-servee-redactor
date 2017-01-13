@@ -3,8 +3,8 @@
   border: 0 none;
   position: relative;
   overflow: auto;
-  margin: 0 !important;
-  // padding: 20px;
+  margin: 0;
+  padding: 0;
   white-space: normal;
   background: transparent;
   // border: 1px solid #eee;
@@ -69,6 +69,9 @@
 
 #redactor-modal-close{
   z-index: 30;
+  &:after {
+    background-color: transparent;
+  }
 }
 
 div#redactor-image-manager-box{
